@@ -41,3 +41,19 @@
 .box {
     border: 1px solid rgb(168, 168, 168);
 }
+
+button {
+    background-color: rgb(26, 99, 129);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+button:hover {
+    background-color: rgb(26, 91, 117);
+}
+
+button:active {
+    background-color: rgb(22, 77, 99);
+}
