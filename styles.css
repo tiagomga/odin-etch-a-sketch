@@ -63,3 +63,9 @@ input {
     border: 2px solid rgb(26, 99, 129);
     border-radius: 8px;
 }
+
+#grid-size {
+    height: 30px;
+    width: 40px;
+    padding: 10px;
+}
