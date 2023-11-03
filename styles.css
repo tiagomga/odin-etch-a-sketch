@@ -36,3 +36,7 @@
     width: 640px;
     background-color: white;
 }
+
+.box {
+    border: 1px solid rgb(168, 168, 168);
+}
