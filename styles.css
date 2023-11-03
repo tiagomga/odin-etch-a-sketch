@@ -10,3 +10,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.bezel {
+    background-color: rgb(26, 99, 129);
+    height: 740px;
+    width: 740px;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    height: 640px;
+    width: 640px;
+    background-color: white;
+}
