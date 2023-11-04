@@ -71,9 +71,11 @@ label {
 }
 
 #grid-size {
-    height: 30px;
-    width: 40px;
-    padding: 10px;
+    height: 40px;
+    width: 60px;
+    padding: 2px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 #color-picker {
