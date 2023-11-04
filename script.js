@@ -1,8 +1,8 @@
-function drawGrid(grid=16) {
+function drawGrid(gridSize=16) {
     const board = document.querySelector('.board');
     const boardSize = board.offsetWidth;
-    const size = boardSize / grid;
-    for (let i = 0; i < grid*grid; i++) {
+    const size = boardSize / gridSize;
+    for (let i = 0; i < gridSize*gridSize; i++) {
         const box = document.createElement('div');
         box.classList.toggle('box');
         box.style.width = `${size}px`;
@@ -49,5 +49,6 @@ const clearButton = document.querySelector('#clear-board');
 changeGridButton.addEventListener('click', changeGridSize);
 clearButton.addEventListener('click', clearBoard);
 document.addEventListener('DOMContentLoaded', () => {
-    drawGrid();
+    let gridSize = document.querySelector('#grid-size').value;
+    drawGrid(gridSize);
 });
