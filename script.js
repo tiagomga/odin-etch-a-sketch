@@ -7,6 +7,7 @@ function drawGrid(grid=16) {
         box.classList.toggle('box');
         box.style.width = `${size}px`;
         box.style.height = `${size}px`;
+        addColorEvent(box);
         board.appendChild(box);
     }
 }
@@ -26,6 +27,13 @@ function changeGridSize() {
         }
     }
     drawGrid(gridSize);
+}
+
+function addColorEvent(div) {
+    div.addEventListener('mouseover', (event) => {
+        const color = document.querySelector('#color-picker').value;
+        event.target.style.backgroundColor = `${color}`;
+    });
 }
 
 const changeGridButton = document.querySelector('#change-grid');
