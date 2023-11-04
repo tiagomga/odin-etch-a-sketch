@@ -40,7 +40,10 @@
 }
 
 .box {
+    width: 40px;
+    height: 40px;
     border: 1px solid rgb(168, 168, 168);
+    background-color: white;
 }
 
 button {
