@@ -82,6 +82,12 @@ label {
     border: 0;
 }
 
+.input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .actions {
     display: flex;
     align-items: center;
