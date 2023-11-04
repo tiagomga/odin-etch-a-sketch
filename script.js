@@ -11,6 +11,26 @@ function drawGrid(grid=16) {
     }
 }
 
+function changeGridSize() {
+    let gridSize = document.querySelector('#grid-size').value;
+    const board = document.querySelector('.board');
+
+    // Constrain gridSize to a maximum of 100
+    if (gridSize > 100) {
+        gridSize = 100;
+    }
+
+    while (board.childNodes.length !== 0) {
+        for (let child of board.childNodes) {
+            board.removeChild(child);
+        }
+    }
+    drawGrid(gridSize);
+}
+
+const changeGridButton = document.querySelector('#change-grid');
+
+changeGridButton.addEventListener('click', changeGridSize);
 document.addEventListener('DOMContentLoaded', () => {
     drawGrid();
 });
