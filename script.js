@@ -7,4 +7,6 @@ function drawGrid(grid=16*16) {
     }
 }
 
-drawGrid();
+document.addEventListener('DOMContentLoaded', () => {
+    drawGrid();
+});
