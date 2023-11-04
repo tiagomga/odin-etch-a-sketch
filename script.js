@@ -36,9 +36,18 @@ function addColorEvent(div) {
     });
 }
 
+function clearBoard() {
+    const boxDivs = document.querySelectorAll('.box');
+    for (let box of boxDivs) {
+        box.style.backgroundColor = 'white';
+    }
+}
+
 const changeGridButton = document.querySelector('#change-grid');
+const clearButton = document.querySelector('#clear-board');
 
 changeGridButton.addEventListener('click', changeGridSize);
+clearButton.addEventListener('click', clearBoard);
 document.addEventListener('DOMContentLoaded', () => {
     drawGrid();
 });
